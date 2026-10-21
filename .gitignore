@@ -1,0 +1,41 @@
+# ===== 环境与密钥（切勿提交）=====
+.venv/
+venv/
+.env
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ===== 运行时产物（数据 / 导出 / 备份 / 日志）=====
+records/
+exports/
+backups/
+logs/
+meetings.db
+*.db
+
+# ===== 本地模型（体积大，首次运行自动下载，见 README）=====
+models/*
+!models/.gitkeep
+
+# ===== 打包产物 =====
+build/
+dist/
+*.spec.bak
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.iml
+*.swp
+
+# ===== 系统 =====
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ===== 工作记录（非项目代码）=====
+.workbuddy/

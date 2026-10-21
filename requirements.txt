@@ -1,0 +1,31 @@
+# ---- 语音转写 ----
+faster-whisper          # 转写引擎（CTranslate2 后端，CPU 上比原版 openai-whisper 快数倍）
+# openai-whisper        # 旧引擎，已被 faster-whisper 取代，可卸载
+torch                   # 仅 CUDA 加速/兼容检测时需要；纯 CPU 场景可不用
+
+# ---- 录音与音频处理 ----
+sounddevice
+scipy
+pydub
+numpy
+zhconv
+
+# ---- 说话人分离（声纹分离）----
+sherpa-onnx             # 离线说话人分离管线（pyannote 分段 + CamPP-Plus 中文声纹向量）
+
+# ---- 大模型 ----
+openai
+python-dotenv
+
+# ---- 文档导出 ----
+python-docx
+reportlab
+python-pptx
+xmind
+
+# ---- 图形界面 ----
+PyQt6
+
+# ---- 可选：HTTP 接口（service/api.py 需要用） ----
+fastapi
+uvicorn
